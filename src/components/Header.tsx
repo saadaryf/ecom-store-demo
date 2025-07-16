@@ -8,7 +8,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm border-b">
+    <header className="bg-white shadow-sm border-b sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -43,9 +43,9 @@ export default function Header() {
             <button className="p-2 text-gray-700 hover:text-blue-600 transition-colors">
               <User className="w-5 h-5" />
             </button>
-            <button className="p-2 text-gray-700 hover:text-blue-600 transition-colors relative">
-              <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+            <button className="p-2 text-gray-700 hover:text-blue-600 transition-colors relative group">
+              <ShoppingCart className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
                 0
               </span>
             </button>
@@ -62,7 +62,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
+          <div className="md:hidden py-4 border-t animate-in slide-in-from-top-2">
             <nav className="flex flex-col space-y-4">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Home

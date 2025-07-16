@@ -137,7 +137,7 @@ export default function AboutPage() {
               <div className="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="text-4xl">👨‍🔧</div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mike Chen</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Umar Farooq</h3>
               <p className="text-blue-600 mb-2">Technical Support Lead</p>
               <p className="text-gray-600">Expert technical support and product knowledge for all our customers</p>
             </div>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Star, ShoppingCart } from 'lucide-react';
+import { ArrowRight, Star, ShoppingCart, Clock } from 'lucide-react';
 import products from '@/data/products.json';
 import { Product } from '@/types/product';
 
@@ -9,10 +9,20 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Banner */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-72 h-72 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
+              <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <Clock className="w-4 h-4 mr-2" />
+                <span className="text-sm font-medium">Limited Time Offer - 20% Off</span>
+              </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 Premium Electronics & Appliances
               </h1>
@@ -61,9 +71,14 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredProducts.map((product) => (
-              <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-square bg-gray-200 flex items-center justify-center">
+              <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div className="aspect-square bg-gray-200 flex items-center justify-center relative">
                   <div className="text-4xl">📺</div>
+                  {product.originalPrice > product.price && (
+                    <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                      SALE
+                    </div>
+                  )}
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between mb-2">
@@ -110,12 +125,90 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Testimonials Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+            <p className="text-lg text-gray-600">Trusted by thousands of satisfied customers</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Excellent service and quality products. The Samsung TV I bought exceeded my expectations. Highly recommended!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                  S
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Sarah Johnson</p>
+                  <p className="text-sm text-gray-500">Verified Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Fast delivery and great prices. The Dyson vacuum is amazing and the customer support was very helpful."
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                  M
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Mike Chen</p>
+                  <p className="text-sm text-gray-500">Verified Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Best electronics store I've found. Competitive prices, quality products, and outstanding service!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                  A
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Ahmed Ali</p>
+                  <p className="text-sm text-gray-500">Verified Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Al Imran Electronics?</h2>
-                          <p className="text-lg text-gray-600">We&apos;re committed to providing the best shopping experience</p>
+            <p className="text-lg text-gray-600">We&apos;re committed to providing the best shopping experience</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

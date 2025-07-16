@@ -53,8 +53,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                  <p className="text-gray-600">+1 (555) 123-4568</p>
+                  <p className="text-gray-600">+92 300 1234567</p>
+                  <p className="text-gray-600">+92 321 9876543</p>
                 </div>
               </div>
 
@@ -76,9 +76,9 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
                   <p className="text-gray-600">
-                    123 Electronics Street<br />
-                    Tech City, TC 12345<br />
-                    United States
+                    Shop #15, Electronics Plaza<br />
+                    Main GT Road<br />
+                    Gujranwala, Pakistan
                   </p>
                 </div>
               </div>
@@ -89,9 +89,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Business Hours</h3>
-                  <p className="text-gray-600">Monday - Friday: 9:00 AM - 8:00 PM</p>
-                  <p className="text-gray-600">Saturday: 10:00 AM - 6:00 PM</p>
-                  <p className="text-gray-600">Sunday: 12:00 PM - 5:00 PM</p>
+                  <p className="text-gray-600">Monday - Saturday: 10:00 AM - 9:00 PM</p>
+                  <p className="text-gray-600">Sunday: 12:00 PM - 8:00 PM</p>
+                  <p className="text-gray-600">Friday Prayer: 1:00 PM - 2:30 PM (Closed)</p>
                 </div>
               </div>
             </div>

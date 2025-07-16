@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-gray-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+92 300 1234567</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-gray-400" />
@@ -73,8 +73,9 @@ export default function Footer() {
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-gray-400 mt-0.5" />
                 <span className="text-gray-300">
-                  123 Electronics St.<br />
-                  Tech City, TC 12345
+                  Shop #15, Electronics Plaza<br />
+                  Main GT Road<br />
+                  Gujranwala, Pakistan
                 </span>
               </div>
             </div>
