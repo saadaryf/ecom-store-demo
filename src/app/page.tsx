@@ -143,7 +143,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                "Excellent service and quality products. The Samsung TV I bought exceeded my expectations. Highly recommended!"
+                &ldquo;Excellent service and quality products. The Samsung TV I bought exceeded my expectations. Highly recommended!&rdquo;
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
@@ -165,7 +165,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                "Fast delivery and great prices. The Dyson vacuum is amazing and the customer support was very helpful."
+                &ldquo;Fast delivery and great prices. The Dyson vacuum is amazing and the customer support was very helpful.&rdquo;
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                "Best electronics store I've found. Competitive prices, quality products, and outstanding service!"
+                &ldquo;Best electronics store I&apos;ve found. Competitive prices, quality products, and outstanding service!&rdquo;
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3">

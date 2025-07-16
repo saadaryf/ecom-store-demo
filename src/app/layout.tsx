@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: "Al Imran Electronics - Premium Home Appliances",
   description: "Your trusted source for premium home appliances, electronics, and smart devices. Quality products at competitive prices.",
   keywords: "electronics, home appliances, smart devices, TV, refrigerator, washing machine, vacuum cleaner",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

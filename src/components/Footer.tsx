@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
@@ -8,10 +9,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">AI</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <Image
+                src="/logo.png"
+                alt="Al Imran Electronics"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="text-xl font-bold">Al Imran Electronics</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">

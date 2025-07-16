@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { ShoppingCart, Menu, X, Search, User } from 'lucide-react';
 
@@ -12,10 +13,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AI</span>
-            </div>
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/logo.png"
+              alt="Al Imran Electronics"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
             <span className="text-xl font-bold text-gray-900">Al Imran Electronics</span>
           </Link>
 
