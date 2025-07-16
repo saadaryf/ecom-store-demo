@@ -5,14 +5,15 @@ import products from '@/data/products.json';
 import { Product } from '@/types/product';
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { slug } = await params;
   const allProducts = products as unknown as Product[];
-  const product = allProducts.find(p => p.slug === params.slug);
+  const product = allProducts.find(p => p.slug === slug);
 
   if (!product) {
     notFound();
