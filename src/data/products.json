@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Samsung 55\" 4K Smart TV",
+    "slug": "samsung-55-4k-smart-tv",
+    "price": 899.99,
+    "originalPrice": 1099.99,
+    "category": "Televisions",
+    "brand": "Samsung",
+    "rating": 4.8,
+    "reviews": 124,
+    "image": "/images/samsung-tv.jpg",
+    "images": [
+      "/images/samsung-tv.jpg",
+      "/images/samsung-tv-2.jpg",
+      "/images/samsung-tv-3.jpg"
+    ],
+    "description": "Experience stunning 4K Ultra HD resolution with HDR technology. Smart TV features with built-in streaming apps and voice control.",
+    "features": [
+      "55\" 4K Ultra HD Display",
+      "HDR Technology",
+      "Smart TV with Apps",
+      "Voice Control",
+      "3 HDMI Ports",
+      "WiFi & Bluetooth"
+    ],
+    "specifications": {
+      "Screen Size": "55 inches",
+      "Resolution": "3840 x 2160 (4K)",
+      "Refresh Rate": "60Hz",
+      "Connectivity": "WiFi, Bluetooth, HDMI, USB",
+      "Power Consumption": "120W"
+    },
+    "inStock": true,
+    "stockCount": 15
+  },
+  {
+    "id": 2,
+    "name": "LG Front Load Washing Machine",
+    "slug": "lg-front-load-washing-machine",
+    "price": 649.99,
+    "originalPrice": 799.99,
+    "category": "Appliances",
+    "brand": "LG",
+    "rating": 4.6,
+    "reviews": 89,
+    "image": "/images/lg-washer.jpg",
+    "images": [
+      "/images/lg-washer.jpg",
+      "/images/lg-washer-2.jpg",
+      "/images/lg-washer-3.jpg"
+    ],
+    "description": "Energy-efficient front load washing machine with steam function and multiple wash cycles. Perfect for modern homes.",
+    "features": [
+      "9kg Capacity",
+      "Front Load Design",
+      "Steam Function",
+      "Multiple Wash Cycles",
+      "Energy Efficient",
+      "Quiet Operation"
+    ],
+    "specifications": {
+      "Capacity": "9kg",
+      "Type": "Front Load",
+      "Energy Rating": "A+++",
+      "Spin Speed": "1400 RPM",
+      "Dimensions": "60 x 60 x 85 cm"
+    },
+    "inStock": true,
+    "stockCount": 8
+  },
+  {
+    "id": 3,
+    "name": "Bosch Refrigerator Side by Side",
+    "slug": "bosch-refrigerator-side-by-side",
+    "price": 1299.99,
+    "originalPrice": 1499.99,
+    "category": "Appliances",
+    "brand": "Bosch",
+    "rating": 4.7,
+    "reviews": 156,
+    "image": "/images/bosch-fridge.jpg",
+    "images": [
+      "/images/bosch-fridge.jpg",
+      "/images/bosch-fridge-2.jpg",
+      "/images/bosch-fridge-3.jpg"
+    ],
+    "description": "Premium side-by-side refrigerator with advanced cooling technology, ice maker, and spacious storage compartments.",
+    "features": [
+      "Side by Side Design",
+      "Ice Maker",
+      "Water Dispenser",
+      "Frost Free",
+      "LED Lighting",
+      "Energy Efficient"
+    ],
+    "specifications": {
+      "Capacity": "540L",
+      "Type": "Side by Side",
+      "Energy Rating": "A++",
+      "Noise Level": "39 dB",
+      "Dimensions": "91 x 76 x 175 cm"
+    },
+    "inStock": true,
+    "stockCount": 12
+  },
+  {
+    "id": 4,
+    "name": "Dyson V15 Detect Cordless Vacuum",
+    "slug": "dyson-v15-detect-cordless-vacuum",
+    "price": 549.99,
+    "originalPrice": 699.99,
+    "category": "Appliances",
+    "brand": "Dyson",
+    "rating": 4.9,
+    "reviews": 203,
+    "image": "/images/dyson-vacuum.jpg",
+    "images": [
+      "/images/dyson-vacuum.jpg",
+      "/images/dyson-vacuum-2.jpg",
+      "/images/dyson-vacuum-3.jpg"
+    ],
+    "description": "Revolutionary cordless vacuum with laser technology to detect hidden dust and powerful suction for deep cleaning.",
+    "features": [
+      "Laser Technology",
+      "60 Minutes Runtime",
+      "HEPA Filtration",
+      "LCD Display",
+      "3 Power Modes",
+      "Cordless Design"
+    ],
+    "specifications": {
+      "Runtime": "60 minutes",
+      "Suction Power": "240 AW",
+      "Battery": "Lithium-ion",
+      "Weight": "2.6kg",
+      "Charging Time": "4.5 hours"
+    },
+    "inStock": true,
+    "stockCount": 25
+  },
+  {
+    "id": 5,
+    "name": "Sony WH-1000XM4 Headphones",
+    "slug": "sony-wh-1000xm4-headphones",
+    "price": 299.99,
+    "originalPrice": 349.99,
+    "category": "Audio",
+    "brand": "Sony",
+    "rating": 4.8,
+    "reviews": 312,
+    "image": "/images/sony-headphones.jpg",
+    "images": [
+      "/images/sony-headphones.jpg",
+      "/images/sony-headphones-2.jpg",
+      "/images/sony-headphones-3.jpg"
+    ],
+    "description": "Industry-leading noise-canceling headphones with exceptional sound quality and 30-hour battery life.",
+    "features": [
+      "Active Noise Cancellation",
+      "30-Hour Battery Life",
+      "Touch Controls",
+      "Quick Charge",
+      "Multi-Point Connection",
+      "Premium Sound"
+    ],
+    "specifications": {
+      "Driver Size": "40mm",
+      "Frequency Response": "4Hz-40kHz",
+      "Battery Life": "30 hours",
+      "Weight": "254g",
+      "Connectivity": "Bluetooth 5.0"
+    },
+    "inStock": true,
+    "stockCount": 18
+  },
+  {
+    "id": 6,
+    "name": "Apple iPad Air 5th Gen",
+    "slug": "apple-ipad-air-5th-gen",
+    "price": 599.99,
+    "originalPrice": 649.99,
+    "category": "Tablets",
+    "brand": "Apple",
+    "rating": 4.7,
+    "reviews": 178,
+    "image": "/images/ipad-air.jpg",
+    "images": [
+      "/images/ipad-air.jpg",
+      "/images/ipad-air-2.jpg",
+      "/images/ipad-air-3.jpg"
+    ],
+    "description": "Powerful iPad Air with M1 chip, stunning 10.9-inch Liquid Retina display, and all-day battery life.",
+    "features": [
+      "M1 Chip",
+      "10.9\" Liquid Retina Display",
+      "5G Capable",
+      "Apple Pencil Support",
+      "Center Stage Camera",
+      "All-Day Battery"
+    ],
+    "specifications": {
+      "Screen Size": "10.9 inches",
+      "Storage": "64GB/256GB",
+      "Chip": "M1",
+      "Battery Life": "10 hours",
+      "Weight": "461g"
+    },
+    "inStock": true,
+    "stockCount": 22
+  }
+] 
