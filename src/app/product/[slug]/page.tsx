@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { Star, ShoppingCart, Heart, Share2, Truck, Shield, RotateCcw } from 'lucide-react';
 import products from '@/data/products.json';
 import { Product } from '@/types/product';
@@ -24,12 +25,12 @@ export default function ProductPage({ params }: ProductPageProps) {
         <nav className="flex mb-8" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
-              <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
+              <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
             </li>
             <li>
               <div className="flex items-center">
                 <span className="mx-2 text-gray-400">/</span>
-                <a href="/products" className="text-gray-700 hover:text-blue-600">Products</a>
+                <Link href="/products" className="text-gray-700 hover:text-blue-600">Products</Link>
               </div>
             </li>
             <li>

@@ -32,10 +32,10 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Have questions? We're here to help! Get in touch with our team for any inquiries 
-              about our products or services.
-            </p>
+                          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                Have questions? We&apos;re here to help! Get in touch with our team for any inquiries 
+                about our products or services.
+              </p>
           </div>
         </div>
       </div>

@@ -8,10 +8,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Al Imran Electronics</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Your trusted partner in premium electronics and home appliances since 2010. 
-              We're committed to bringing you the latest technology with exceptional service.
-            </p>
+                          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                Your trusted partner in premium electronics and home appliances since 2010. 
+                We&apos;re committed to bringing you the latest technology with exceptional service.
+              </p>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
                 to provide quality electronics and appliances at fair prices with outstanding customer service.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Over the years, we've grown from a local shop to a trusted name in the electronics industry, 
+                Over the years, we&apos;ve grown from a local shop to a trusted name in the electronics industry, 
                 serving thousands of satisfied customers across the region. Our commitment to quality, 
                 innovation, and customer satisfaction has remained unchanged.
               </p>
